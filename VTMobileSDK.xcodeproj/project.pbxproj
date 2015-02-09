@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAFDFBF41A88B3B5003972C0 /* VTMobileSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAFDFBF31A88B3B5003972C0 /* VTMobileSDK.h */; };
+		DAFDFBF61A88B3B5003972C0 /* VTMobileSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFDFBF51A88B3B5003972C0 /* VTMobileSDK.m */; };
+		DAFDFBFC1A88B3B5003972C0 /* libVTMobileSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFDFBF01A88B3B5003972C0 /* libVTMobileSDK.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAFDFBFD1A88B3B5003972C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAFDFBE81A88B3B5003972C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAFDFBEF1A88B3B5003972C0;
+			remoteInfo = VTMobileSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DAFDFBEE1A88B3B5003972C0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				DAFDFBF41A88B3B5003972C0 /* VTMobileSDK.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DAFDFBF01A88B3B5003972C0 /* libVTMobileSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVTMobileSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAFDFBF31A88B3B5003972C0 /* VTMobileSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTMobileSDK.h; sourceTree = "<group>"; };
+		DAFDFBF51A88B3B5003972C0 /* VTMobileSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTMobileSDK.m; sourceTree = "<group>"; };
+		DAFDFBFB1A88B3B5003972C0 /* VTMobileSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VTMobileSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAFDFC011A88B3B5003972C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAFDFBED1A88B3B5003972C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAFDFBF81A88B3B5003972C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFDFBFC1A88B3B5003972C0 /* libVTMobileSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAFDFBE71A88B3B5003972C0 = {
+			isa = PBXGroup;
+			children = (
+				DAFDFBF21A88B3B5003972C0 /* VTMobileSDK */,
+				DAFDFBFF1A88B3B5003972C0 /* VTMobileSDKTests */,
+				DAFDFBF11A88B3B5003972C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAFDFBF11A88B3B5003972C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAFDFBF01A88B3B5003972C0 /* libVTMobileSDK.a */,
+				DAFDFBFB1A88B3B5003972C0 /* VTMobileSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAFDFBF21A88B3B5003972C0 /* VTMobileSDK */ = {
+			isa = PBXGroup;
+			children = (
+				DAFDFBF31A88B3B5003972C0 /* VTMobileSDK.h */,
+				DAFDFBF51A88B3B5003972C0 /* VTMobileSDK.m */,
+			);
+			path = VTMobileSDK;
+			sourceTree = "<group>";
+		};
+		DAFDFBFF1A88B3B5003972C0 /* VTMobileSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAFDFC001A88B3B5003972C0 /* Supporting Files */,
+			);
+			path = VTMobileSDKTests;
+			sourceTree = "<group>";
+		};
+		DAFDFC001A88B3B5003972C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAFDFC011A88B3B5003972C0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAFDFBEF1A88B3B5003972C0 /* VTMobileSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAFDFC041A88B3B5003972C0 /* Build configuration list for PBXNativeTarget "VTMobileSDK" */;
+			buildPhases = (
+				DAFDFBEC1A88B3B5003972C0 /* Sources */,
+				DAFDFBED1A88B3B5003972C0 /* Frameworks */,
+				DAFDFBEE1A88B3B5003972C0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VTMobileSDK;
+			productName = VTMobileSDK;
+			productReference = DAFDFBF01A88B3B5003972C0 /* libVTMobileSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DAFDFBFA1A88B3B5003972C0 /* VTMobileSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAFDFC071A88B3B5003972C0 /* Build configuration list for PBXNativeTarget "VTMobileSDKTests" */;
+			buildPhases = (
+				DAFDFBF71A88B3B5003972C0 /* Sources */,
+				DAFDFBF81A88B3B5003972C0 /* Frameworks */,
+				DAFDFBF91A88B3B5003972C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAFDFBFE1A88B3B5003972C0 /* PBXTargetDependency */,
+			);
+			name = VTMobileSDKTests;
+			productName = VTMobileSDKTests;
+			productReference = DAFDFBFB1A88B3B5003972C0 /* VTMobileSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAFDFBE81A88B3B5003972C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Veritrans Indonesia";
+				TargetAttributes = {
+					DAFDFBEF1A88B3B5003972C0 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					DAFDFBFA1A88B3B5003972C0 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = DAFDFBEB1A88B3B5003972C0 /* Build configuration list for PBXProject "VTMobileSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DAFDFBE71A88B3B5003972C0;
+			productRefGroup = DAFDFBF11A88B3B5003972C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAFDFBEF1A88B3B5003972C0 /* VTMobileSDK */,
+				DAFDFBFA1A88B3B5003972C0 /* VTMobileSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAFDFBF91A88B3B5003972C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAFDFBEC1A88B3B5003972C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFDFBF61A88B3B5003972C0 /* VTMobileSDK.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAFDFBF71A88B3B5003972C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAFDFBFE1A88B3B5003972C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAFDFBEF1A88B3B5003972C0 /* VTMobileSDK */;
+			targetProxy = DAFDFBFD1A88B3B5003972C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DAFDFC021A88B3B5003972C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DAFDFC031A88B3B5003972C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAFDFC051A88B3B5003972C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DAFDFC061A88B3B5003972C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DAFDFC081A88B3B5003972C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VTMobileSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DAFDFC091A88B3B5003972C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VTMobileSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAFDFBEB1A88B3B5003972C0 /* Build configuration list for PBXProject "VTMobileSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAFDFC021A88B3B5003972C0 /* Debug */,
+				DAFDFC031A88B3B5003972C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAFDFC041A88B3B5003972C0 /* Build configuration list for PBXNativeTarget "VTMobileSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAFDFC051A88B3B5003972C0 /* Debug */,
+				DAFDFC061A88B3B5003972C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DAFDFC071A88B3B5003972C0 /* Build configuration list for PBXNativeTarget "VTMobileSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAFDFC081A88B3B5003972C0 /* Debug */,
+				DAFDFC091A88B3B5003972C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAFDFBE81A88B3B5003972C0 /* Project object */;
+}
