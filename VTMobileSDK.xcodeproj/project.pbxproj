@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DAFDFBF41A88B3B5003972C0 /* VTMobileSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAFDFBF31A88B3B5003972C0 /* VTMobileSDK.h */; };
-		DAFDFBF61A88B3B5003972C0 /* VTMobileSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFDFBF51A88B3B5003972C0 /* VTMobileSDK.m */; };
+		DAA074A01A89D5F700FD2927 /* VTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA0749F1A89D5F700FD2927 /* VTConstants.m */; };
+		DAA074A31A89DAB800FD2927 /* VTConstantTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA074A21A89DAB800FD2927 /* VTConstantTest.m */; };
+		DAA074A51A89DF1100FD2927 /* VTMobileTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA074A41A89DF1100FD2927 /* VTMobileTest.m */; };
+		DAA074A91A89ED0E00FD2927 /* VTBaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA074A81A89ED0E00FD2927 /* VTBaseResponse.m */; };
+		DAA074AC1A89ED6200FD2927 /* VTGetProductResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA074AB1A89ED6200FD2927 /* VTGetProductResponse.m */; };
+		DAA074AF1A89F1AD00FD2927 /* VTHttpContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA074AE1A89F1AD00FD2927 /* VTHttpContainer.m */; };
+		DAA074B21A8A0E8300FD2927 /* VTProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA074B11A8A0E8300FD2927 /* VTProduct.m */; };
+		DAFDFBF41A88B3B5003972C0 /* VTMobile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAFDFBF31A88B3B5003972C0 /* VTMobile.h */; };
+		DAFDFBF61A88B3B5003972C0 /* VTMobile.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFDFBF51A88B3B5003972C0 /* VTMobile.m */; };
 		DAFDFBFC1A88B3B5003972C0 /* libVTMobileSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFDFBF01A88B3B5003972C0 /* libVTMobileSDK.a */; };
+		DAFDFC0D1A88B576003972C0 /* VTCardDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFDFC0C1A88B576003972C0 /* VTCardDetails.m */; };
+		DAFDFC111A88B7D8003972C0 /* VTMobileConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFDFC101A88B7D8003972C0 /* VTMobileConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,18 +38,34 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				DAFDFBF41A88B3B5003972C0 /* VTMobileSDK.h in CopyFiles */,
+				DAFDFBF41A88B3B5003972C0 /* VTMobile.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DAA0749E1A89D5F700FD2927 /* VTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTConstants.h; sourceTree = "<group>"; };
+		DAA0749F1A89D5F700FD2927 /* VTConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTConstants.m; sourceTree = "<group>"; };
+		DAA074A21A89DAB800FD2927 /* VTConstantTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTConstantTest.m; sourceTree = "<group>"; };
+		DAA074A41A89DF1100FD2927 /* VTMobileTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTMobileTest.m; sourceTree = "<group>"; };
+		DAA074A71A89ED0E00FD2927 /* VTBaseResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTBaseResponse.h; sourceTree = "<group>"; };
+		DAA074A81A89ED0E00FD2927 /* VTBaseResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTBaseResponse.m; sourceTree = "<group>"; };
+		DAA074AA1A89ED6200FD2927 /* VTGetProductResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTGetProductResponse.h; sourceTree = "<group>"; };
+		DAA074AB1A89ED6200FD2927 /* VTGetProductResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTGetProductResponse.m; sourceTree = "<group>"; };
+		DAA074AD1A89F1AD00FD2927 /* VTHttpContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTHttpContainer.h; sourceTree = "<group>"; };
+		DAA074AE1A89F1AD00FD2927 /* VTHttpContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTHttpContainer.m; sourceTree = "<group>"; };
+		DAA074B01A8A0E8300FD2927 /* VTProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTProduct.h; sourceTree = "<group>"; };
+		DAA074B11A8A0E8300FD2927 /* VTProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTProduct.m; sourceTree = "<group>"; };
 		DAFDFBF01A88B3B5003972C0 /* libVTMobileSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVTMobileSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAFDFBF31A88B3B5003972C0 /* VTMobileSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTMobileSDK.h; sourceTree = "<group>"; };
-		DAFDFBF51A88B3B5003972C0 /* VTMobileSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTMobileSDK.m; sourceTree = "<group>"; };
+		DAFDFBF31A88B3B5003972C0 /* VTMobile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTMobile.h; sourceTree = "<group>"; };
+		DAFDFBF51A88B3B5003972C0 /* VTMobile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTMobile.m; sourceTree = "<group>"; };
 		DAFDFBFB1A88B3B5003972C0 /* VTMobileSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VTMobileSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFDFC011A88B3B5003972C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAFDFC0B1A88B576003972C0 /* VTCardDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTCardDetails.h; sourceTree = "<group>"; };
+		DAFDFC0C1A88B576003972C0 /* VTCardDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTCardDetails.m; sourceTree = "<group>"; };
+		DAFDFC0F1A88B7D8003972C0 /* VTMobileConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTMobileConfig.h; sourceTree = "<group>"; };
+		DAFDFC101A88B7D8003972C0 /* VTMobileConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTMobileConfig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +87,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DAA074A11A89DAA200FD2927 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				DAA074A21A89DAB800FD2927 /* VTConstantTest.m */,
+			);
+			name = helper;
+			sourceTree = "<group>";
+		};
+		DAA074A61A89ECF900FD2927 /* response */ = {
+			isa = PBXGroup;
+			children = (
+				DAA074A71A89ED0E00FD2927 /* VTBaseResponse.h */,
+				DAA074A81A89ED0E00FD2927 /* VTBaseResponse.m */,
+				DAA074AA1A89ED6200FD2927 /* VTGetProductResponse.h */,
+				DAA074AB1A89ED6200FD2927 /* VTGetProductResponse.m */,
+			);
+			name = response;
+			sourceTree = "<group>";
+		};
 		DAFDFBE71A88B3B5003972C0 = {
 			isa = PBXGroup;
 			children = (
@@ -83,8 +127,11 @@
 		DAFDFBF21A88B3B5003972C0 /* VTMobileSDK */ = {
 			isa = PBXGroup;
 			children = (
-				DAFDFBF31A88B3B5003972C0 /* VTMobileSDK.h */,
-				DAFDFBF51A88B3B5003972C0 /* VTMobileSDK.m */,
+				DAA074A61A89ECF900FD2927 /* response */,
+				DAFDFC0E1A88B7C6003972C0 /* helper */,
+				DAFDFC0A1A88B54C003972C0 /* entity */,
+				DAFDFBF31A88B3B5003972C0 /* VTMobile.h */,
+				DAFDFBF51A88B3B5003972C0 /* VTMobile.m */,
 			);
 			path = VTMobileSDK;
 			sourceTree = "<group>";
@@ -92,7 +139,9 @@
 		DAFDFBFF1A88B3B5003972C0 /* VTMobileSDKTests */ = {
 			isa = PBXGroup;
 			children = (
+				DAA074A11A89DAA200FD2927 /* helper */,
 				DAFDFC001A88B3B5003972C0 /* Supporting Files */,
+				DAA074A41A89DF1100FD2927 /* VTMobileTest.m */,
 			);
 			path = VTMobileSDKTests;
 			sourceTree = "<group>";
@@ -103,6 +152,30 @@
 				DAFDFC011A88B3B5003972C0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAFDFC0A1A88B54C003972C0 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				DAFDFC0B1A88B576003972C0 /* VTCardDetails.h */,
+				DAFDFC0C1A88B576003972C0 /* VTCardDetails.m */,
+				DAA074B01A8A0E8300FD2927 /* VTProduct.h */,
+				DAA074B11A8A0E8300FD2927 /* VTProduct.m */,
+			);
+			name = entity;
+			sourceTree = "<group>";
+		};
+		DAFDFC0E1A88B7C6003972C0 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				DAFDFC0F1A88B7D8003972C0 /* VTMobileConfig.h */,
+				DAFDFC101A88B7D8003972C0 /* VTMobileConfig.m */,
+				DAA0749E1A89D5F700FD2927 /* VTConstants.h */,
+				DAA0749F1A89D5F700FD2927 /* VTConstants.m */,
+				DAA074AD1A89F1AD00FD2927 /* VTHttpContainer.h */,
+				DAA074AE1A89F1AD00FD2927 /* VTHttpContainer.m */,
+			);
+			name = helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +266,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAFDFBF61A88B3B5003972C0 /* VTMobileSDK.m in Sources */,
+				DAFDFC0D1A88B576003972C0 /* VTCardDetails.m in Sources */,
+				DAA074B21A8A0E8300FD2927 /* VTProduct.m in Sources */,
+				DAA074AC1A89ED6200FD2927 /* VTGetProductResponse.m in Sources */,
+				DAA074AF1A89F1AD00FD2927 /* VTHttpContainer.m in Sources */,
+				DAFDFC111A88B7D8003972C0 /* VTMobileConfig.m in Sources */,
+				DAFDFBF61A88B3B5003972C0 /* VTMobile.m in Sources */,
+				DAA074A01A89D5F700FD2927 /* VTConstants.m in Sources */,
+				DAA074A91A89ED0E00FD2927 /* VTBaseResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAA074A31A89DAB800FD2927 /* VTConstantTest.m in Sources */,
+				DAA074A51A89DF1100FD2927 /* VTMobileTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +438,7 @@
 				DAFDFC061A88B3B5003972C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAFDFC071A88B3B5003972C0 /* Build configuration list for PBXNativeTarget "VTMobileSDKTests" */ = {
 			isa = XCConfigurationList;
@@ -364,6 +447,7 @@
 				DAFDFC091A88B3B5003972C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
