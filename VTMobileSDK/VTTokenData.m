@@ -10,4 +10,7 @@
 
 @implementation VTTokenData
 
+@synthesize token_id = _token_id;
+@synthesize bank = _bank;
+
 @end

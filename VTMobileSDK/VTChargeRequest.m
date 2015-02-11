@@ -27,7 +27,7 @@
 
 +(JSONKeyMapper*) keyMapper{
     return [[JSONKeyMapper alloc] initWithDictionary:@{
-            @"token_data" : @"credit_card"
+            @"credit_card" : @"token_data"            
     }];
 }
 

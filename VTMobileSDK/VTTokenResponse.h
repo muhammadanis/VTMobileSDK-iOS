@@ -13,8 +13,8 @@
 
 @property(nonatomic,assign) NSInteger status_code;
 @property(nonatomic,copy) NSString* status_message;
-@property(nonatomic,copy) NSString* redirect_url;
+@property(nonatomic,copy) NSString<Optional>* redirect_url;
 @property(nonatomic,copy) NSString* token_id;
-@property(nonatomic,copy) NSString* bank;
+@property(nonatomic,copy) NSString<Optional>* bank;
 
 @end

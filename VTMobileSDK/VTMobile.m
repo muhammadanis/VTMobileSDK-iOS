@@ -34,7 +34,6 @@
     //start send asynchronously
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
         if(data.length > 0 && connectionError == nil){
-            NSLog(@"Data: %@",[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
             NSError* error;
             NSDictionary* jsonParsed = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
             if(error == nil){
@@ -95,17 +94,19 @@
     //set http method
     request.HTTPMethod = @"POST";
     //set header content-type
-    [request setValue:@"application/json" forKey:@"Content-Type"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     //set header accept
-    [request setValue:@"application/json" forKey:@"Accept"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
     //set body
     NSData* payload = [[chargeRequest toJSONString] dataUsingEncoding:NSUTF8StringEncoding];
+    NSLog(@"Payload json: %@",[chargeRequest toJSONString]);
     [request setHTTPBody:payload];
     
     //start send asynchrounously
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
         if(data.length > 0 && connectionError == nil){
             NSString* json = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+            NSLog(@"Json Charge: %@",json);
             NSError* err = nil;
             VTChargeResponse* response = [[VTChargeResponse alloc] initWithString:json error:&err];
             if(err == nil){

@@ -11,17 +11,17 @@
 
 @interface VTChargeResponse : JSONModel
 
-@property(nonatomic,copy) NSString* approval_code;
-@property(nonatomic,copy) NSString* status_code;
-@property(nonatomic,copy) NSString* transaction_time;
-@property(nonatomic,copy) NSString* gross_amount;
-@property(nonatomic,copy) NSString* transaction_status;
-@property(nonatomic,copy) NSString* masked_card;
-@property(nonatomic,copy) NSString* fraud_status;
-@property(nonatomic,copy) NSString* status_message;
-@property(nonatomic,copy) NSString* bank;
-@property(nonatomic,copy) NSString* order_id;
-@property(nonatomic,copy) NSString* payment_type;
+@property(nonatomic,copy) NSString<Optional>* approval_code;
+@property(nonatomic,copy) NSString<Optional>* status_code;
+@property(nonatomic,copy) NSString<Optional>* transaction_time;
+@property(nonatomic,copy) NSString<Optional>* gross_amount;
+@property(nonatomic,copy) NSString<Optional>* transaction_status;
+@property(nonatomic,copy) NSString<Optional>* masked_card;
+@property(nonatomic,copy) NSString<Optional>* fraud_status;
+@property(nonatomic,copy) NSString<Optional>* status_message;
+@property(nonatomic,copy) NSString<Optional>* bank;
+@property(nonatomic,copy) NSString<Optional>* order_id;
+@property(nonatomic,copy) NSString<Optional>* payment_type;
 @property(nonatomic,copy) NSString* transaction_id;
 
 

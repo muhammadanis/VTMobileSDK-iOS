@@ -35,7 +35,7 @@ static NSString* SandboxTokenEndpoint = @"https://api.sandbox.veritrans.co.id/v2
 }
 
 +(NSString*) getTokenEndpoint{
-    return [VTMobileConfig isProduction] ? TokenEndpoint : SandboxEndpoint;
+    return [VTMobileConfig isProduction] ? TokenEndpoint : SandboxTokenEndpoint;
 }
 
 

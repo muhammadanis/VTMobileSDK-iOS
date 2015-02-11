@@ -11,4 +11,7 @@
 
 @interface VTTokenData : JSONModel
 
+@property NSString* token_id;
+@property NSString<Optional>* bank;
+
 @end

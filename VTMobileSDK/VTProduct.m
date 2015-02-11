@@ -16,4 +16,11 @@
 @synthesize price = _price;
 @synthesize quantity = _quantity;
 
+
++(JSONKeyMapper*) keyMapper{
+    return [[JSONKeyMapper alloc] initWithDictionary:@{
+        @"id" : @"productId"                                                       
+    }];
+}
+
 @end
