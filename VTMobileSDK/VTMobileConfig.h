@@ -16,6 +16,5 @@
 +(BOOL) isProduction;
 +(void) setIsProduction:(BOOL)val;
 
-+(NSString*)getTokenUrl;
 
 @end

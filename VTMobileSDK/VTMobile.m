@@ -64,5 +64,64 @@
     }];
 }
 
++(void) getToken:(void (^)(VTTokenResponse *, NSException *))completionHandler withRequest:(VTTokenRequest *)tokenRequest{
+    NSURL* url = [NSURL URLWithString:[tokenRequest getTokenUrl]];
+    NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:url];
+    //send data
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+        if(data.length > 0 && connectionError == nil){
+            NSString* json = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+            NSError* err = nil;
+            VTTokenResponse* response = [[VTTokenResponse alloc] initWithString:json error:&err];
+            if(err == nil){
+                completionHandler(response,nil);
+            }else{
+                NSException* exception = [[NSException alloc] initWithName:@"JsonParsedException" reason:err.localizedDescription userInfo:err.userInfo];
+                completionHandler(nil,exception);
+            }
+        }else{
+            NSException* exception = [[NSException alloc] initWithName:@"ConnectionException" reason:connectionError.localizedDescription userInfo:connectionError.userInfo];
+            completionHandler(nil,exception);
+        }
+
+    }];
+}
+
++(void) charge:(void (^)(VTChargeResponse *, NSException *))completionHandler withChargeRequest:(VTChargeRequest*) chargeRequest{
+    //create url with charge endpoing
+    NSURL* url = [NSURL URLWithString:[VTConstants getChargeEndpoint]];
+    //create request
+    NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:url];
+    //set http method
+    request.HTTPMethod = @"POST";
+    //set header content-type
+    [request setValue:@"application/json" forKey:@"Content-Type"];
+    //set header accept
+    [request setValue:@"application/json" forKey:@"Accept"];
+    //set body
+    NSData* payload = [[chargeRequest toJSONString] dataUsingEncoding:NSUTF8StringEncoding];
+    [request setHTTPBody:payload];
+    
+    //start send asynchrounously
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+        if(data.length > 0 && connectionError == nil){
+            NSString* json = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+            NSError* err = nil;
+            VTChargeResponse* response = [[VTChargeResponse alloc] initWithString:json error:&err];
+            if(err == nil){
+                completionHandler(response,nil);
+            }else{
+                NSException* exception = [[NSException alloc] initWithName:@"JsonParsedException" reason:err.localizedDescription userInfo:err.userInfo];
+                completionHandler(nil,exception);
+            }
+        }else{
+            NSException* exception = [[NSException alloc] initWithName:@"ConnectionException" reason:connectionError.localizedDescription userInfo:connectionError.userInfo];
+            completionHandler(nil,exception);
+        }
+    }];
+}
+
+
+
 
 @end

@@ -7,8 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JSONModel.h"
 
-@interface VTProduct : NSObject
+@protocol VTProduct
+@end
+
+@interface VTProduct : JSONModel
 
 @property(nonatomic,copy) NSString* productId;
 @property(nonatomic,copy) NSString* name;

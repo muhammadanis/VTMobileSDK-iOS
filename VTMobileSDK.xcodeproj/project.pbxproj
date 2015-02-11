@@ -14,6 +14,34 @@
 		DAA074AC1A89ED6200FD2927 /* VTGetProductResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA074AB1A89ED6200FD2927 /* VTGetProductResponse.m */; };
 		DAA074AF1A89F1AD00FD2927 /* VTHttpContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA074AE1A89F1AD00FD2927 /* VTHttpContainer.m */; };
 		DAA074B21A8A0E8300FD2927 /* VTProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA074B11A8A0E8300FD2927 /* VTProduct.m */; };
+		DAA074B51A8A2F2D00FD2927 /* VTChargeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA074B41A8A2F2D00FD2927 /* VTChargeResponse.m */; };
+		DAACAC321A8B0EFF00C6265A /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC1B1A8B0EFF00C6265A /* JSONModel.m */; };
+		DAACAC331A8B0EFF00C6265A /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC1B1A8B0EFF00C6265A /* JSONModel.m */; };
+		DAACAC341A8B0EFF00C6265A /* JSONModelArray.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC1D1A8B0EFF00C6265A /* JSONModelArray.m */; };
+		DAACAC351A8B0EFF00C6265A /* JSONModelArray.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC1D1A8B0EFF00C6265A /* JSONModelArray.m */; };
+		DAACAC361A8B0EFF00C6265A /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC1F1A8B0EFF00C6265A /* JSONModelClassProperty.m */; };
+		DAACAC371A8B0EFF00C6265A /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC1F1A8B0EFF00C6265A /* JSONModelClassProperty.m */; };
+		DAACAC381A8B0EFF00C6265A /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC211A8B0EFF00C6265A /* JSONModelError.m */; };
+		DAACAC391A8B0EFF00C6265A /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC211A8B0EFF00C6265A /* JSONModelError.m */; };
+		DAACAC3A1A8B0EFF00C6265A /* NSArray+JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC241A8B0EFF00C6265A /* NSArray+JSONModel.m */; };
+		DAACAC3B1A8B0EFF00C6265A /* NSArray+JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC241A8B0EFF00C6265A /* NSArray+JSONModel.m */; };
+		DAACAC3C1A8B0EFF00C6265A /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC281A8B0EFF00C6265A /* JSONAPI.m */; };
+		DAACAC3D1A8B0EFF00C6265A /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC281A8B0EFF00C6265A /* JSONAPI.m */; };
+		DAACAC3E1A8B0EFF00C6265A /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC2A1A8B0EFF00C6265A /* JSONHTTPClient.m */; };
+		DAACAC3F1A8B0EFF00C6265A /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC2A1A8B0EFF00C6265A /* JSONHTTPClient.m */; };
+		DAACAC401A8B0EFF00C6265A /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC2C1A8B0EFF00C6265A /* JSONModel+networking.m */; };
+		DAACAC411A8B0EFF00C6265A /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC2C1A8B0EFF00C6265A /* JSONModel+networking.m */; };
+		DAACAC421A8B0EFF00C6265A /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC2F1A8B0EFF00C6265A /* JSONKeyMapper.m */; };
+		DAACAC431A8B0EFF00C6265A /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC2F1A8B0EFF00C6265A /* JSONKeyMapper.m */; };
+		DAACAC441A8B0EFF00C6265A /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC311A8B0EFF00C6265A /* JSONValueTransformer.m */; };
+		DAACAC451A8B0EFF00C6265A /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC311A8B0EFF00C6265A /* JSONValueTransformer.m */; };
+		DAACAC4C1A8B100300C6265A /* VTJsonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC4B1A8B100300C6265A /* VTJsonTest.m */; };
+		DAACAC4E1A8B101600C6265A /* JsonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC4D1A8B101600C6265A /* JsonTest.m */; };
+		DAACAC521A8B162800C6265A /* VTBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC511A8B162700C6265A /* VTBaseRequest.m */; };
+		DAACAC551A8B16CC00C6265A /* VTChargeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC541A8B16CC00C6265A /* VTChargeRequest.m */; };
+		DAACAC581A8B25E100C6265A /* VTTokenData.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC571A8B25E100C6265A /* VTTokenData.m */; };
+		DAACAC5B1A8B492800C6265A /* VTTokenRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC5A1A8B492800C6265A /* VTTokenRequest.m */; };
+		DAACAC5E1A8B494800C6265A /* VTTokenResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC5D1A8B494800C6265A /* VTTokenResponse.m */; };
 		DAFDFBF41A88B3B5003972C0 /* VTMobile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAFDFBF31A88B3B5003972C0 /* VTMobile.h */; };
 		DAFDFBF61A88B3B5003972C0 /* VTMobile.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFDFBF51A88B3B5003972C0 /* VTMobile.m */; };
 		DAFDFBFC1A88B3B5003972C0 /* libVTMobileSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFDFBF01A88B3B5003972C0 /* libVTMobileSDK.a */; };
@@ -57,6 +85,42 @@
 		DAA074AE1A89F1AD00FD2927 /* VTHttpContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTHttpContainer.m; sourceTree = "<group>"; };
 		DAA074B01A8A0E8300FD2927 /* VTProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTProduct.h; sourceTree = "<group>"; };
 		DAA074B11A8A0E8300FD2927 /* VTProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTProduct.m; sourceTree = "<group>"; };
+		DAA074B31A8A2F2D00FD2927 /* VTChargeResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTChargeResponse.h; sourceTree = "<group>"; };
+		DAA074B41A8A2F2D00FD2927 /* VTChargeResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTChargeResponse.m; sourceTree = "<group>"; };
+		DAACAC1A1A8B0EFF00C6265A /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
+		DAACAC1B1A8B0EFF00C6265A /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
+		DAACAC1C1A8B0EFF00C6265A /* JSONModelArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelArray.h; sourceTree = "<group>"; };
+		DAACAC1D1A8B0EFF00C6265A /* JSONModelArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelArray.m; sourceTree = "<group>"; };
+		DAACAC1E1A8B0EFF00C6265A /* JSONModelClassProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelClassProperty.h; sourceTree = "<group>"; };
+		DAACAC1F1A8B0EFF00C6265A /* JSONModelClassProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelClassProperty.m; sourceTree = "<group>"; };
+		DAACAC201A8B0EFF00C6265A /* JSONModelError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelError.h; sourceTree = "<group>"; };
+		DAACAC211A8B0EFF00C6265A /* JSONModelError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelError.m; sourceTree = "<group>"; };
+		DAACAC231A8B0EFF00C6265A /* NSArray+JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+JSONModel.h"; sourceTree = "<group>"; };
+		DAACAC241A8B0EFF00C6265A /* NSArray+JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JSONModel.m"; sourceTree = "<group>"; };
+		DAACAC251A8B0EFF00C6265A /* JSONModelLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelLib.h; sourceTree = "<group>"; };
+		DAACAC271A8B0EFF00C6265A /* JSONAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONAPI.h; sourceTree = "<group>"; };
+		DAACAC281A8B0EFF00C6265A /* JSONAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONAPI.m; sourceTree = "<group>"; };
+		DAACAC291A8B0EFF00C6265A /* JSONHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONHTTPClient.h; sourceTree = "<group>"; };
+		DAACAC2A1A8B0EFF00C6265A /* JSONHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONHTTPClient.m; sourceTree = "<group>"; };
+		DAACAC2B1A8B0EFF00C6265A /* JSONModel+networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONModel+networking.h"; sourceTree = "<group>"; };
+		DAACAC2C1A8B0EFF00C6265A /* JSONModel+networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONModel+networking.m"; sourceTree = "<group>"; };
+		DAACAC2E1A8B0EFF00C6265A /* JSONKeyMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKeyMapper.h; sourceTree = "<group>"; };
+		DAACAC2F1A8B0EFF00C6265A /* JSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKeyMapper.m; sourceTree = "<group>"; };
+		DAACAC301A8B0EFF00C6265A /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
+		DAACAC311A8B0EFF00C6265A /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
+		DAACAC4A1A8B100300C6265A /* VTJsonTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTJsonTest.h; sourceTree = "<group>"; };
+		DAACAC4B1A8B100300C6265A /* VTJsonTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTJsonTest.m; sourceTree = "<group>"; };
+		DAACAC4D1A8B101600C6265A /* JsonTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonTest.m; sourceTree = "<group>"; };
+		DAACAC501A8B162700C6265A /* VTBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTBaseRequest.h; sourceTree = "<group>"; };
+		DAACAC511A8B162700C6265A /* VTBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTBaseRequest.m; sourceTree = "<group>"; };
+		DAACAC531A8B16CC00C6265A /* VTChargeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTChargeRequest.h; sourceTree = "<group>"; };
+		DAACAC541A8B16CC00C6265A /* VTChargeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTChargeRequest.m; sourceTree = "<group>"; };
+		DAACAC561A8B25E100C6265A /* VTTokenData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTTokenData.h; sourceTree = "<group>"; };
+		DAACAC571A8B25E100C6265A /* VTTokenData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTTokenData.m; sourceTree = "<group>"; };
+		DAACAC591A8B492800C6265A /* VTTokenRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTTokenRequest.h; sourceTree = "<group>"; };
+		DAACAC5A1A8B492800C6265A /* VTTokenRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTTokenRequest.m; sourceTree = "<group>"; };
+		DAACAC5C1A8B494800C6265A /* VTTokenResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTTokenResponse.h; sourceTree = "<group>"; };
+		DAACAC5D1A8B494800C6265A /* VTTokenResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTTokenResponse.m; sourceTree = "<group>"; };
 		DAFDFBF01A88B3B5003972C0 /* libVTMobileSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVTMobileSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFDFBF31A88B3B5003972C0 /* VTMobile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTMobile.h; sourceTree = "<group>"; };
 		DAFDFBF51A88B3B5003972C0 /* VTMobile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTMobile.m; sourceTree = "<group>"; };
@@ -102,8 +166,86 @@
 				DAA074A81A89ED0E00FD2927 /* VTBaseResponse.m */,
 				DAA074AA1A89ED6200FD2927 /* VTGetProductResponse.h */,
 				DAA074AB1A89ED6200FD2927 /* VTGetProductResponse.m */,
+				DAA074B31A8A2F2D00FD2927 /* VTChargeResponse.h */,
+				DAA074B41A8A2F2D00FD2927 /* VTChargeResponse.m */,
+				DAACAC5C1A8B494800C6265A /* VTTokenResponse.h */,
+				DAACAC5D1A8B494800C6265A /* VTTokenResponse.m */,
 			);
 			name = response;
+			sourceTree = "<group>";
+		};
+		DAACAC181A8B0EFF00C6265A /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				DAACAC191A8B0EFF00C6265A /* JSONModel */,
+				DAACAC221A8B0EFF00C6265A /* JSONModelCategories */,
+				DAACAC251A8B0EFF00C6265A /* JSONModelLib.h */,
+				DAACAC261A8B0EFF00C6265A /* JSONModelNetworking */,
+				DAACAC2D1A8B0EFF00C6265A /* JSONModelTransformations */,
+			);
+			name = JSONModel;
+			path = "../../../trial/JSONModel-master/JSONModel";
+			sourceTree = "<group>";
+		};
+		DAACAC191A8B0EFF00C6265A /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				DAACAC1A1A8B0EFF00C6265A /* JSONModel.h */,
+				DAACAC1B1A8B0EFF00C6265A /* JSONModel.m */,
+				DAACAC1C1A8B0EFF00C6265A /* JSONModelArray.h */,
+				DAACAC1D1A8B0EFF00C6265A /* JSONModelArray.m */,
+				DAACAC1E1A8B0EFF00C6265A /* JSONModelClassProperty.h */,
+				DAACAC1F1A8B0EFF00C6265A /* JSONModelClassProperty.m */,
+				DAACAC201A8B0EFF00C6265A /* JSONModelError.h */,
+				DAACAC211A8B0EFF00C6265A /* JSONModelError.m */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		DAACAC221A8B0EFF00C6265A /* JSONModelCategories */ = {
+			isa = PBXGroup;
+			children = (
+				DAACAC231A8B0EFF00C6265A /* NSArray+JSONModel.h */,
+				DAACAC241A8B0EFF00C6265A /* NSArray+JSONModel.m */,
+			);
+			path = JSONModelCategories;
+			sourceTree = "<group>";
+		};
+		DAACAC261A8B0EFF00C6265A /* JSONModelNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				DAACAC271A8B0EFF00C6265A /* JSONAPI.h */,
+				DAACAC281A8B0EFF00C6265A /* JSONAPI.m */,
+				DAACAC291A8B0EFF00C6265A /* JSONHTTPClient.h */,
+				DAACAC2A1A8B0EFF00C6265A /* JSONHTTPClient.m */,
+				DAACAC2B1A8B0EFF00C6265A /* JSONModel+networking.h */,
+				DAACAC2C1A8B0EFF00C6265A /* JSONModel+networking.m */,
+			);
+			path = JSONModelNetworking;
+			sourceTree = "<group>";
+		};
+		DAACAC2D1A8B0EFF00C6265A /* JSONModelTransformations */ = {
+			isa = PBXGroup;
+			children = (
+				DAACAC2E1A8B0EFF00C6265A /* JSONKeyMapper.h */,
+				DAACAC2F1A8B0EFF00C6265A /* JSONKeyMapper.m */,
+				DAACAC301A8B0EFF00C6265A /* JSONValueTransformer.h */,
+				DAACAC311A8B0EFF00C6265A /* JSONValueTransformer.m */,
+			);
+			path = JSONModelTransformations;
+			sourceTree = "<group>";
+		};
+		DAACAC4F1A8B160C00C6265A /* request */ = {
+			isa = PBXGroup;
+			children = (
+				DAACAC501A8B162700C6265A /* VTBaseRequest.h */,
+				DAACAC511A8B162700C6265A /* VTBaseRequest.m */,
+				DAACAC531A8B16CC00C6265A /* VTChargeRequest.h */,
+				DAACAC541A8B16CC00C6265A /* VTChargeRequest.m */,
+				DAACAC591A8B492800C6265A /* VTTokenRequest.h */,
+				DAACAC5A1A8B492800C6265A /* VTTokenRequest.m */,
+			);
+			name = request;
 			sourceTree = "<group>";
 		};
 		DAFDFBE71A88B3B5003972C0 = {
@@ -127,6 +269,8 @@
 		DAFDFBF21A88B3B5003972C0 /* VTMobileSDK */ = {
 			isa = PBXGroup;
 			children = (
+				DAACAC4F1A8B160C00C6265A /* request */,
+				DAACAC181A8B0EFF00C6265A /* JSONModel */,
 				DAA074A61A89ECF900FD2927 /* response */,
 				DAFDFC0E1A88B7C6003972C0 /* helper */,
 				DAFDFC0A1A88B54C003972C0 /* entity */,
@@ -139,9 +283,12 @@
 		DAFDFBFF1A88B3B5003972C0 /* VTMobileSDKTests */ = {
 			isa = PBXGroup;
 			children = (
+				DAACAC4A1A8B100300C6265A /* VTJsonTest.h */,
+				DAACAC4B1A8B100300C6265A /* VTJsonTest.m */,
 				DAA074A11A89DAA200FD2927 /* helper */,
 				DAFDFC001A88B3B5003972C0 /* Supporting Files */,
 				DAA074A41A89DF1100FD2927 /* VTMobileTest.m */,
+				DAACAC4D1A8B101600C6265A /* JsonTest.m */,
 			);
 			path = VTMobileSDKTests;
 			sourceTree = "<group>";
@@ -161,6 +308,8 @@
 				DAFDFC0C1A88B576003972C0 /* VTCardDetails.m */,
 				DAA074B01A8A0E8300FD2927 /* VTProduct.h */,
 				DAA074B11A8A0E8300FD2927 /* VTProduct.m */,
+				DAACAC561A8B25E100C6265A /* VTTokenData.h */,
+				DAACAC571A8B25E100C6265A /* VTTokenData.m */,
 			);
 			name = entity;
 			sourceTree = "<group>";
@@ -268,12 +417,28 @@
 			files = (
 				DAFDFC0D1A88B576003972C0 /* VTCardDetails.m in Sources */,
 				DAA074B21A8A0E8300FD2927 /* VTProduct.m in Sources */,
+				DAACAC401A8B0EFF00C6265A /* JSONModel+networking.m in Sources */,
 				DAA074AC1A89ED6200FD2927 /* VTGetProductResponse.m in Sources */,
+				DAA074B51A8A2F2D00FD2927 /* VTChargeResponse.m in Sources */,
+				DAACAC3E1A8B0EFF00C6265A /* JSONHTTPClient.m in Sources */,
+				DAACAC5E1A8B494800C6265A /* VTTokenResponse.m in Sources */,
 				DAA074AF1A89F1AD00FD2927 /* VTHttpContainer.m in Sources */,
+				DAACAC5B1A8B492800C6265A /* VTTokenRequest.m in Sources */,
+				DAACAC581A8B25E100C6265A /* VTTokenData.m in Sources */,
+				DAACAC551A8B16CC00C6265A /* VTChargeRequest.m in Sources */,
+				DAACAC361A8B0EFF00C6265A /* JSONModelClassProperty.m in Sources */,
+				DAACAC441A8B0EFF00C6265A /* JSONValueTransformer.m in Sources */,
 				DAFDFC111A88B7D8003972C0 /* VTMobileConfig.m in Sources */,
 				DAFDFBF61A88B3B5003972C0 /* VTMobile.m in Sources */,
+				DAACAC3C1A8B0EFF00C6265A /* JSONAPI.m in Sources */,
+				DAACAC3A1A8B0EFF00C6265A /* NSArray+JSONModel.m in Sources */,
+				DAACAC421A8B0EFF00C6265A /* JSONKeyMapper.m in Sources */,
 				DAA074A01A89D5F700FD2927 /* VTConstants.m in Sources */,
 				DAA074A91A89ED0E00FD2927 /* VTBaseResponse.m in Sources */,
+				DAACAC521A8B162800C6265A /* VTBaseRequest.m in Sources */,
+				DAACAC381A8B0EFF00C6265A /* JSONModelError.m in Sources */,
+				DAACAC321A8B0EFF00C6265A /* JSONModel.m in Sources */,
+				DAACAC341A8B0EFF00C6265A /* JSONModelArray.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,8 +446,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAACAC3F1A8B0EFF00C6265A /* JSONHTTPClient.m in Sources */,
+				DAACAC3D1A8B0EFF00C6265A /* JSONAPI.m in Sources */,
+				DAACAC391A8B0EFF00C6265A /* JSONModelError.m in Sources */,
+				DAACAC4E1A8B101600C6265A /* JsonTest.m in Sources */,
+				DAACAC3B1A8B0EFF00C6265A /* NSArray+JSONModel.m in Sources */,
+				DAACAC431A8B0EFF00C6265A /* JSONKeyMapper.m in Sources */,
+				DAACAC331A8B0EFF00C6265A /* JSONModel.m in Sources */,
+				DAACAC351A8B0EFF00C6265A /* JSONModelArray.m in Sources */,
+				DAACAC4C1A8B100300C6265A /* VTJsonTest.m in Sources */,
+				DAACAC371A8B0EFF00C6265A /* JSONModelClassProperty.m in Sources */,
+				DAACAC411A8B0EFF00C6265A /* JSONModel+networking.m in Sources */,
 				DAA074A31A89DAB800FD2927 /* VTConstantTest.m in Sources */,
 				DAA074A51A89DF1100FD2927 /* VTMobileTest.m in Sources */,
+				DAACAC451A8B0EFF00C6265A /* JSONValueTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
