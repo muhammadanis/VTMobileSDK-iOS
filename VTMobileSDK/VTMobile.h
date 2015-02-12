@@ -13,6 +13,8 @@
 #import "VTChargeRequest.h"
 #import "VTTokenRequest.h"
 #import "VTTokenResponse.h"
+#import "VTConfirmTransactionRequest.h"
+#import "VTConfirmTransactionResponse.h"
 
 
 @interface VTMobile : NSObject
@@ -23,5 +25,6 @@
 
 +(void) charge:(void(^)(VTChargeResponse* response, NSException* exception)) completionHandler withChargeRequest:(VTChargeRequest*) chargeRequest;
 
++(void) confirmTransaction:(void(^)(VTConfirmTransactionResponse* response, NSException* exception))completionHandler withRequest:(VTConfirmTransactionRequest*) transactionRequest;
 
 @end

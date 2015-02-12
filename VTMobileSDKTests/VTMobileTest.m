@@ -121,7 +121,7 @@
             //add product to item details
             [chargeRequest.item_details addObject:product];
             //set properties
-            chargeRequest.email = @"dichi@alfaridi.info";
+            chargeRequest.email = @"dichi3@alfaridi.info";
             chargeRequest.payment_type = @"credit_card";
             chargeRequest.token_data = tokenData;
             
@@ -138,14 +138,40 @@
             
         }else{
             NSLog(@"Exception GetToken: %@",exception.description);
+            XCTAssertFalse(true);
         }
     } withRequest:request];
     
     while (waitingForBlock) {
         [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate dateWithTimeIntervalSinceNow:0.1]];
     }
-
 }
+
+-(void) testConfirmTransaction{
+    __block BOOL waitingForBlock = YES;
+    
+    VTConfirmTransactionRequest* request = [[VTConfirmTransactionRequest alloc] init];
+    request.transaction_id = @"6f09c95d-75ff-4ecd-956c-c29095603bdd";
+    
+    [VTMobile confirmTransaction:^(VTConfirmTransactionResponse *response, NSException *exception) {
+        if(exception == nil){
+            XCTAssertNotNil(response);
+            XCTAssertNotNil(response.result);
+            //print result
+            NSLog(@"Status: %@",response.result);
+        }else{
+            NSLog(@"Exception ConfirmTransaction: %@",exception.description);
+            XCTAssertFalse(true);
+        }
+        waitingForBlock = NO;
+    } withRequest:request];
+    
+    while (waitingForBlock) {
+        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate dateWithTimeIntervalSinceNow:0.1]];
+    }
+}
+
+
 
 -(VTCardDetails*) cardFactory:(BOOL)secure{
     VTCardDetails* cardDetails = [[VTCardDetails alloc] init];

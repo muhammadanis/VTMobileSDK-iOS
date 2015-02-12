@@ -99,7 +99,6 @@
     [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
     //set body
     NSData* payload = [[chargeRequest toJSONString] dataUsingEncoding:NSUTF8StringEncoding];
-    NSLog(@"Payload json: %@",[chargeRequest toJSONString]);
     [request setHTTPBody:payload];
     
     //start send asynchrounously
@@ -122,7 +121,40 @@
     }];
 }
 
-
++(void) confirmTransaction:(void (^)(VTConfirmTransactionResponse *, NSException *))completionHandler withRequest:(VTConfirmTransactionRequest *)transactionRequest{
+    //create url with confirm endpoint
+    NSURL* url = [NSURL URLWithString:[VTConstants getConfirmEndpoint]];
+    //create request
+    NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:url];
+    //set http method
+    request.HTTPMethod =@"POST";
+    //set header content type
+    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    //set header accept
+    [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    //set body
+    NSData* payload = [[transactionRequest toJSONString] dataUsingEncoding:NSUTF8StringEncoding];
+    [request setHTTPBody:payload];
+    
+    //send asynchronously
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+        if(data.length > 0 && connectionError == nil){
+            NSString* json = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+            NSLog(@"Json Confirm: %@",json);
+            NSError* err = nil;
+            VTConfirmTransactionResponse* response = [[VTConfirmTransactionResponse alloc] initWithString:json error:&err];
+            if(err == nil){
+                completionHandler(response,nil);
+            }else{
+                NSException* exception = [[NSException alloc] initWithName:@"JsonParsedException" reason:err.localizedDescription userInfo:err.userInfo];
+                completionHandler(nil,exception);
+            }
+        }else{
+            NSException* exception = [[NSException alloc] initWithName:@"ConnectionException" reason:connectionError.localizedDescription userInfo:connectionError.userInfo];
+            completionHandler(nil,exception);
+        }
+    }];
+}
 
 
 @end

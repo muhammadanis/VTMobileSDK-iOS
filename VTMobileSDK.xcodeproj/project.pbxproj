@@ -42,6 +42,8 @@
 		DAACAC581A8B25E100C6265A /* VTTokenData.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC571A8B25E100C6265A /* VTTokenData.m */; };
 		DAACAC5B1A8B492800C6265A /* VTTokenRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC5A1A8B492800C6265A /* VTTokenRequest.m */; };
 		DAACAC5E1A8B494800C6265A /* VTTokenResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DAACAC5D1A8B494800C6265A /* VTTokenResponse.m */; };
+		DAB02B721A8C672C006B937B /* VTConfirmTransactionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB02B711A8C672C006B937B /* VTConfirmTransactionRequest.m */; };
+		DAB02B751A8C683B006B937B /* VTConfirmTransactionResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB02B741A8C683B006B937B /* VTConfirmTransactionResponse.m */; };
 		DAFDFBF41A88B3B5003972C0 /* VTMobile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAFDFBF31A88B3B5003972C0 /* VTMobile.h */; };
 		DAFDFBF61A88B3B5003972C0 /* VTMobile.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFDFBF51A88B3B5003972C0 /* VTMobile.m */; };
 		DAFDFBFC1A88B3B5003972C0 /* libVTMobileSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFDFBF01A88B3B5003972C0 /* libVTMobileSDK.a */; };
@@ -121,6 +123,10 @@
 		DAACAC5A1A8B492800C6265A /* VTTokenRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTTokenRequest.m; sourceTree = "<group>"; };
 		DAACAC5C1A8B494800C6265A /* VTTokenResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTTokenResponse.h; sourceTree = "<group>"; };
 		DAACAC5D1A8B494800C6265A /* VTTokenResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTTokenResponse.m; sourceTree = "<group>"; };
+		DAB02B701A8C672C006B937B /* VTConfirmTransactionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTConfirmTransactionRequest.h; sourceTree = "<group>"; };
+		DAB02B711A8C672C006B937B /* VTConfirmTransactionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTConfirmTransactionRequest.m; sourceTree = "<group>"; };
+		DAB02B731A8C683B006B937B /* VTConfirmTransactionResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTConfirmTransactionResponse.h; sourceTree = "<group>"; };
+		DAB02B741A8C683B006B937B /* VTConfirmTransactionResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTConfirmTransactionResponse.m; sourceTree = "<group>"; };
 		DAFDFBF01A88B3B5003972C0 /* libVTMobileSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVTMobileSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFDFBF31A88B3B5003972C0 /* VTMobile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTMobile.h; sourceTree = "<group>"; };
 		DAFDFBF51A88B3B5003972C0 /* VTMobile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTMobile.m; sourceTree = "<group>"; };
@@ -170,6 +176,8 @@
 				DAA074B41A8A2F2D00FD2927 /* VTChargeResponse.m */,
 				DAACAC5C1A8B494800C6265A /* VTTokenResponse.h */,
 				DAACAC5D1A8B494800C6265A /* VTTokenResponse.m */,
+				DAB02B731A8C683B006B937B /* VTConfirmTransactionResponse.h */,
+				DAB02B741A8C683B006B937B /* VTConfirmTransactionResponse.m */,
 			);
 			name = response;
 			sourceTree = "<group>";
@@ -244,6 +252,8 @@
 				DAACAC541A8B16CC00C6265A /* VTChargeRequest.m */,
 				DAACAC591A8B492800C6265A /* VTTokenRequest.h */,
 				DAACAC5A1A8B492800C6265A /* VTTokenRequest.m */,
+				DAB02B701A8C672C006B937B /* VTConfirmTransactionRequest.h */,
+				DAB02B711A8C672C006B937B /* VTConfirmTransactionRequest.m */,
 			);
 			name = request;
 			sourceTree = "<group>";
@@ -417,6 +427,7 @@
 			files = (
 				DAFDFC0D1A88B576003972C0 /* VTCardDetails.m in Sources */,
 				DAA074B21A8A0E8300FD2927 /* VTProduct.m in Sources */,
+				DAB02B751A8C683B006B937B /* VTConfirmTransactionResponse.m in Sources */,
 				DAACAC401A8B0EFF00C6265A /* JSONModel+networking.m in Sources */,
 				DAA074AC1A89ED6200FD2927 /* VTGetProductResponse.m in Sources */,
 				DAA074B51A8A2F2D00FD2927 /* VTChargeResponse.m in Sources */,
@@ -425,6 +436,7 @@
 				DAA074AF1A89F1AD00FD2927 /* VTHttpContainer.m in Sources */,
 				DAACAC5B1A8B492800C6265A /* VTTokenRequest.m in Sources */,
 				DAACAC581A8B25E100C6265A /* VTTokenData.m in Sources */,
+				DAB02B721A8C672C006B937B /* VTConfirmTransactionRequest.m in Sources */,
 				DAACAC551A8B16CC00C6265A /* VTChargeRequest.m in Sources */,
 				DAACAC361A8B0EFF00C6265A /* JSONModelClassProperty.m in Sources */,
 				DAACAC441A8B0EFF00C6265A /* JSONValueTransformer.m in Sources */,
