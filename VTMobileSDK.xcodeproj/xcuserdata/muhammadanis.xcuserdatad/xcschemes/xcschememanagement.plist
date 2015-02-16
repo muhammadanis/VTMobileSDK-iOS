@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>UniversalVTMobileSDK.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>VTMobileSDK.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>DAA5E6F41A91A6B80010BB30</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>DAFDFBEF1A88B3B5003972C0</key>
 		<dict>
 			<key>primary</key>
